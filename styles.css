@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(135deg, #280252, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.info-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.info-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #dc3545;
+}
+
+.info-container p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#question {
+  font-size: 1.3rem;
+  margin: 20px 0 30px;
+}
+
+.answer-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  background: #ffffff33;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ffffff55;
+  transform: scale(1.05);
+}
+
+button.correct {
+  background: #28a745 !important;
+  box-shadow: 0 4px 15px #28a745cc !important;
+  cursor: default;
+}
+
+button.wrong {
+  background: #dc3545 !important;
+  box-shadow: 0 4px 15px #dc3545cc !important;
+  cursor: default;
+}
+
+#next-btn {
+  margin-top: 25px;
+  background: #ff6f61;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#next-btn:hover:not(:disabled) {
+  background: #ff503f;
+  transform: scale(1.05);
+}
+
+#next-btn:disabled {
+  background: #ff6f61cc;
+  cursor: not-allowed;
+}
+
+#result {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  font-weight: 700;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}

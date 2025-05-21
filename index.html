@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Quiz - Mini Project</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <div class="info-container">
+    <h2>Student Information</h2>
+    <p><strong>Name:</strong> Md Khusroo</p>
+    <p><strong>Class:</strong> Second Year</p>
+    <p><strong>Dept:</strong> CSE</p>
+    <p><strong>PRN:</strong> 123456789</p>
+    <p><strong>Subject:</strong> Mini-project</p>
+  </div>
+
+  <div class="quiz-container" role="main" aria-labelledby="quiz-title" aria-live="polite">
+    <h1 id="quiz-title">Quick Quiz</h1>
+    <div id="question" aria-live="assertive">Loading question...</div>
+    <div class="answer-btns" id="answers"></div>
+    <button id="next-btn" disabled aria-disabled="true" aria-label="Next question button">Next</button>
+    <div id="result" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
